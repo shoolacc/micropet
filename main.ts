@@ -87,10 +87,10 @@ basic.showLeds(`
 basic.pause(100)
 basic.showString(" Hi!")
 basic.forever(function () {
-    if (input.lightLevel() < 2) {
+    if (input.lightLevel() < 0) {
         basic.showString("Sleep mode")
     }
-    if (input.lightLevel() > 2) {
+    if (input.lightLevel() > 1) {
         if (input.temperature() < 18) {
             music.playMelody("E D C - - - - - ", 120)
             basic.showString("Too cold!")
